@@ -1,0 +1,84 @@
+{
+  "topic": "Resume / Portfolio Bot",
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "hey there", "good morning", "good evening", "yo", "what's up", "howdy"],
+      "response": "Hey! I'm ResumeBot \ud83d\udc4b Ask me about my skills, work experience, education, projects, or how to contact me."
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "see ya", "quit", "exit", "talk later", "gotta go"],
+      "response": "Thanks for chatting! Good luck out there. \ud83d\udc4b"
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "thanks a lot", "appreciate it", "cheers", "much appreciated"],
+      "response": "You're welcome! Anything else you'd like to know?"
+    },
+    {
+      "tag": "name",
+      "patterns": ["what is your name", "who are you", "what should I call you", "your name"],
+      "response": "I'm ResumeBot, a small retrieval-based assistant built to answer questions about this resume."
+    },
+    {
+      "tag": "skills",
+      "patterns": [
+        "what are your skills", "what technologies do you know", "what can you do",
+        "list your skills", "what programming languages do you know",
+        "what tools do you use", "tech stack", "what are you good at"
+      ],
+      "response": "Core skills: Python, JavaScript/TypeScript, SQL, React, basic ML (scikit-learn/pandas), Git, and REST API design. Comfortable picking up new stacks quickly."
+    },
+    {
+      "tag": "experience",
+      "patterns": [
+        "what is your work experience", "where have you worked", "tell me about your job",
+        "work history", "previous companies", "how many years of experience do you have",
+        "what did you do at your last job"
+      ],
+      "response": "3+ years of experience as a software developer, mostly building backend services and internal tools, plus some data analysis work on the side."
+    },
+    {
+      "tag": "education",
+      "patterns": [
+        "what is your education", "where did you study", "what degree do you have",
+        "which university did you attend", "school background", "college"
+      ],
+      "response": "B.Sc. in Computer Science. Also completed a few self-directed courses in machine learning and NLP."
+    },
+    {
+      "tag": "projects",
+      "patterns": [
+        "what projects have you built", "tell me about your projects", "show me your work",
+        "portfolio", "side projects", "what have you built"
+      ],
+      "response": "A few highlights: a rule-based/retrieval chatbot (like this one!), a personal finance tracker, and a small web scraper + dashboard for tracking prices."
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "how can I contact you", "what is your email", "contact info",
+        "how do I reach you", "linkedin", "github", "phone number",
+        "how do I get in touch with you", "get in touch"
+      ],
+      "response": "You can reach me at example@email.com, or check my GitHub/LinkedIn (links in the resume header)."
+    },
+    {
+      "tag": "availability",
+      "patterns": [
+        "are you looking for a job", "are you available", "open to work",
+        "are you hiring", "when can you start", "notice period"
+      ],
+      "response": "Yes, currently open to new opportunities! Notice period is roughly 2-4 weeks depending on the role."
+    },
+    {
+      "tag": "strengths",
+      "patterns": [
+        "what are your strengths", "why should we hire you", "what makes you a good fit",
+        "what do you bring to the team"
+      ],
+      "response": "I'm quick to ramp up on unfamiliar codebases, communicate clearly with non-technical stakeholders, and enjoy turning ambiguous problems into shippable tools."
+    }
+  ]
+}
